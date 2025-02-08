@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumpadActivity">
+
+    <EditText
+        android:id="@+id/numpad_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="none"
+        android:padding="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:alignmentMode="alignMargins"
+        android:columnCount="3"
+        android:rowCount="4"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numpad_display">
+
+        <!-- Buttons für die Ziffern -->
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="*"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btnConf"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/main"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/main"
+        android:text="@string/btn_back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

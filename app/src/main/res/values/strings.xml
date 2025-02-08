@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ArduinoBLE</string>
+    <string name="btn_scan">Scan</string>
+    <string name="show_null">Show all</string>
+    <string name="btn_numpad">Numpad</string>
+    <string name="btn_terminal">Terminal</string>
+    <string name="btn_switch">Switch</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_back">Back</string>
+</resources>
